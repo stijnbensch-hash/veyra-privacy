@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veyra – Privacybeleid</title>
+<style>
+  :root { color-scheme: light dark; --bg:#ffffff; --fg:#14181c; --muted:#5b6670; --accent:#0a8fb3; --line:#e3e8ec; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#05080b; --fg:#e8eef2; --muted:#9aa7b1; --accent:#2fd0f0; --line:#1b2630; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 36px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  p, li { color: var(--fg); }
+  .muted { color: var(--muted); font-size: .95rem; }
+  a { color: var(--accent); }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  code { font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Veyra – Privacybeleid</h1>
+<p class="muted">Laatst bijgewerkt: 7 oktober 2026. Geldt voor Veyra op iPhone, iPad, Apple TV (tvOS) en Mac.</p>
+
+<h2>In het kort</h2>
+<ul>
+  <li>Veyra heeft <strong>geen eigen server en geen accounts</strong>. Er is geen gebruikersdatabase bij de ontwikkelaar.</li>
+  <li>Veyra gebruikt <strong>geen advertenties, geen tracking en geen analyse- of crashrapportage</strong>. Gegevens worden niet verkocht of gedeeld voor reclame.</li>
+  <li>Je instellingen, voorkeuren en aanmeldgegevens blijven <strong>op je eigen apparaat</strong> (aanmeldgegevens in de sleutelhanger).</li>
+  <li>Veyra praat alleen met diensten die nodig zijn voor een functie die je zelf gebruikt, en met servers die <strong>jij</strong> instelt.</li>
+</ul>
+
+<h2>Wie is verantwoordelijk</h2>
+<p>stinus<br>
+Contact: <a href="mailto:stijn.bensch@me.com">stijn.bensch@me.com</a></p>
+<p class="muted">Omdat de ontwikkelaar zelf geen gebruikersgegevens ontvangt of bewaart, zijn de gegevensstromen hieronder de volledige lijst van wat Veyra verstuurt.</p>
+
+<h2>Wat blijft op je apparaat</h2>
+<ul>
+  <li>Instellingen, Home-indeling, planken, weergavevoorkeuren, bronvolgorde en afspeelvoorkeuren.</li>
+  <li>Kijkvoortgang en bekeken-status op dit apparaat, en tijdelijk opgeslagen afbeeldingen en gegevens (cache).</li>
+  <li>Aanmeldgegevens en toegangssleutels voor IPTV, mediaservers (Jellyfin, Emby, Plex, WebDAV), Trakt en eventuele eigen API-sleutels: in de sleutelhanger van je apparaat.</li>
+  <li>Herinneringen en meldingen (bijvoorbeeld een aflevering, wedstrijd of beschikbaarheid) worden <strong>lokaal</strong> op je apparaat gepland. Er is geen pushserver van de ontwikkelaar.</li>
+  <li>Op Apple TV bewaart Veyra een korte momentopname voor het Top Shelf-beeld op het beginscherm, lokaal in de gedeelde sleutelhanger.</li>
+</ul>
+
+<h2>Gegevens die Veyra verstuurt (alleen als je de functie gebruikt)</h2>
+<p>Bij elk verzoek ziet de ontvanger technisch je IP-adres. Op de gegevens bij deze diensten is het eigen privacybeleid van die dienst van toepassing.</p>
+<table>
+  <tr><th>Dienst</th><th>Waarvoor</th><th>Wat wordt verstuurd</th></tr>
+  <tr><td>TMDB (themoviedb.org)</td><td>Film- en seriegegevens, afbeeldingen, streamingaanbieders</td><td>Zoektermen, titel- en TMDB-id's, regio</td></tr>
+  <tr><td>Trakt (trakt.tv) – vrijwillig</td><td>Verder kijken, kalender, lijsten, bekeken-status</td><td>Na koppelen: je profiel, geschiedenis, lijsten en beoordelingen worden gelezen. De afgespeelde titel en het bekeken percentage gaan alleen naar Trakt als je dat in de app zelf inschakelt.</td></tr>
+  <tr><td>OpenSubtitles</td><td>Ondertitels zoeken</td><td>IMDb-id en bij series seizoen en aflevering, plus taal</td></tr>
+  <tr><td>OMDb, fanart.tv, MDBList</td><td>Beoordelingen, banners en logo's</td><td>IMDb- of TMDB-id; alleen als er een sleutel is ingesteld</td></tr>
+  <tr><td>TVmaze</td><td>Exacte uitzendtijden van series</td><td>IMDb-id, seizoen en aflevering</td></tr>
+  <tr><td>IntroDB en SkipDB</td><td>Intro's en aftiteling overslaan</td><td>IMDb-id, seizoen en aflevering</td></tr>
+  <tr><td>ESPN en TheSportsDB</td><td>Sportprogramma, uitslagen en logo's</td><td>Competities en teams die je kiest; geen persoonlijke gegevens</td></tr>
+  <tr><td>Wikimedia, iptv-org en GitHub</td><td>Logo's van competities en zenders</td><td>Alleen het opvragen van een afbeelding of lijst</td></tr>
+  <tr><td>YouTube</td><td>Trailers</td><td>Wordt geopend als je een trailer afspeelt; het beleid van YouTube geldt dan</td></tr>
+  <tr><td>Plex (plex.tv)</td><td>Koppelen van je Plex-server</td><td>Alleen als je Plex koppelt: de aanmelding gebeurt bij plex.tv; Veyra bewaart het token in de sleutelhanger</td></tr>
+</table>
+
+<h2>Je eigen servers</h2>
+<p>Mediaservers, WebDAV-mappen en IPTV-providers zijn adressen die <strong>jij</strong> instelt. Veyra stuurt je aanmeldgegevens en afspeelverzoeken alleen naar die server. Wat die server daarmee doet, bepaalt de beheerder van die server.</p>
+<p>Veyra levert zelf geen films, series, zenders of andere content. Je bent zelf verantwoordelijk voor de bronnen die je toevoegt.</p>
+
+<h2>Wat Veyra niet doet</h2>
+<ul>
+  <li>Geen advertenties, geen advertentie-id, geen tracking tussen apps en websites, geen profielen voor reclame.</li>
+  <li>Geen toegang tot je locatie, contacten, foto's, camera of microfoon.</li>
+  <li>Geen analyse- of crashrapportage-diensten van derden.</li>
+</ul>
+
+<h2>Bewaren en verwijderen</h2>
+<ul>
+  <li>Gegevens op je apparaat blijven tot je ze zelf wist. Een instelling terugzetten of de app verwijderen wist de lokale gegevens. Aanmeldgegevens in de sleutelhanger verwijder je in de app (bijvoorbeeld Trakt ontkoppelen, of een server verwijderen).</li>
+  <li>Trakt: ontkoppel in de app en trek de toegang ook in via je account op trakt.tv.</li>
+  <li>Gegevens bij diensten van derden en op je eigen servers beheer je bij die partijen.</li>
+</ul>
+
+<h2>Je rechten</h2>
+<p>Omdat de ontwikkelaar geen persoonsgegevens van gebruikers ontvangt of bewaart, is er bij de ontwikkelaar niets om in te zien of te wissen. Heb je een vraag over dit beleid, mail dan naar het contactadres hierboven. Voor gegevens bij derden kun je je rechten (inzage, correctie, verwijdering) uitoefenen bij die partij.</p>
+
+<h2>Kinderen</h2>
+<p>Veyra is bedoeld als speler voor je eigen bronnen en verzamelt geen gegevens over kinderen of over wie het apparaat gebruikt.</p>
+
+<h2>Beveiliging</h2>
+<p>Aanmeldgegevens staan in de sleutelhanger van Apple. Verbindingen naar vaste diensten lopen via https. Voor je eigen servers bepaal je zelf het adres; Veyra staat ook een http-adres op je thuisnetwerk toe, omdat veel eigen servers geen certificaat hebben.</p>
+
+<h2>Wijzigingen</h2>
+<p>Verandert dit beleid, dan staat de nieuwe versie op deze pagina met een nieuwe datum bovenaan.</p>
+
+<hr>
+<h2 id="en">English summary</h2>
+<p>Veyra has no servers or accounts of its own, no ads, no tracking and no analytics or crash reporting. Settings and credentials stay on your device (credentials in the Keychain). Veyra only contacts services needed for features you use (TMDB for metadata and images; Trakt, OpenSubtitles, TVmaze, IntroDB/SkipDB, OMDb, fanart.tv, MDBList, ESPN and TheSportsDB only when you use or configure them) and the servers you set up yourself (Jellyfin, Emby, Plex, WebDAV, IPTV). Veyra provides no content itself. The developer receives no personal data. Contact: <a href="mailto:stijn.bensch@me.com">stijn.bensch@me.com</a>.</p>
+
+</main>
+</body>
+</html>
