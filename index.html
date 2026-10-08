@@ -24,13 +24,13 @@
 <main>
 
 <h1>Veyra – Privacybeleid</h1>
-<p class="muted">Laatst bijgewerkt: 7 oktober 2026. Geldt voor Veyra op iPhone, iPad, Apple TV (tvOS) en Mac.</p>
+<p class="muted">Laatst bijgewerkt: 8 oktober 2026. Geldt voor Veyra op iPhone, iPad, Apple TV (tvOS) en Mac.</p>
 
 <h2>In het kort</h2>
 <ul>
   <li>Veyra heeft <strong>geen eigen server en geen accounts</strong>. Er is geen gebruikersdatabase bij de ontwikkelaar.</li>
   <li>Veyra gebruikt <strong>geen advertenties, geen tracking en geen analyse- of crashrapportage</strong>. Gegevens worden niet verkocht of gedeeld voor reclame.</li>
-  <li>Je instellingen, voorkeuren en aanmeldgegevens blijven <strong>op je eigen apparaat</strong> (aanmeldgegevens in de sleutelhanger).</li>
+  <li>Je instellingen, voorkeuren en aanmeldgegevens blijven <strong>van jou</strong>: op je eigen apparaten, en als je iCloud gebruikt synchroniseren ze via je eigen Apple-account tussen je apparaten. De ontwikkelaar heeft daar geen toegang toe.</li>
   <li>Veyra praat alleen met diensten die nodig zijn voor een functie die je zelf gebruikt, en met servers die <strong>jij</strong> instelt.</li>
 </ul>
 
@@ -43,7 +43,7 @@ Contact: <a href="mailto:stijn.bensch@me.com">stijn.bensch@me.com</a></p>
 <ul>
   <li>Instellingen, Home-indeling, planken, weergavevoorkeuren, bronvolgorde en afspeelvoorkeuren.</li>
   <li>Kijkvoortgang en bekeken-status op dit apparaat, en tijdelijk opgeslagen afbeeldingen en gegevens (cache).</li>
-  <li>Aanmeldgegevens en toegangssleutels voor IPTV, mediaservers (Jellyfin, Emby, Plex, WebDAV), Trakt en eventuele eigen API-sleutels: in de sleutelhanger van je apparaat.</li>
+  <li>Aanmeldgegevens en toegangssleutels voor IPTV, mediaservers (Jellyfin, Emby, Plex, WebDAV), Trakt en eventuele eigen API-sleutels: in de sleutelhanger van je apparaat. De Trakt-koppeling blijft op het apparaat waar je hem hebt gekoppeld.</li>
   <li>Herinneringen en meldingen (bijvoorbeeld een aflevering, wedstrijd of beschikbaarheid) worden <strong>lokaal</strong> op je apparaat gepland. Er is geen pushserver van de ontwikkelaar.</li>
   <li>Op Apple TV bewaart Veyra een korte momentopname voor het Top Shelf-beeld op het beginscherm, lokaal in de gedeelde sleutelhanger.</li>
 </ul>
@@ -61,8 +61,18 @@ Contact: <a href="mailto:stijn.bensch@me.com">stijn.bensch@me.com</a></p>
   <tr><td>ESPN en TheSportsDB</td><td>Sportprogramma, uitslagen en logo's</td><td>Competities en teams die je kiest; geen persoonlijke gegevens</td></tr>
   <tr><td>Wikimedia, iptv-org en GitHub</td><td>Logo's van competities en zenders</td><td>Alleen het opvragen van een afbeelding of lijst</td></tr>
   <tr><td>YouTube</td><td>Trailers</td><td>Wordt geopend als je een trailer afspeelt; het beleid van YouTube geldt dan</td></tr>
+  <tr><td>Apple iCloud</td><td>Synchronisatie tussen je eigen apparaten</td><td>Je instellingen en (via de sleutelhanger, versleuteld) je inloggegevens, naar je eigen iCloud-account; niet naar de ontwikkelaar</td></tr>
   <tr><td>Plex (plex.tv)</td><td>Koppelen van je Plex-server</td><td>Alleen als je Plex koppelt: de aanmelding gebeurt bij plex.tv; Veyra bewaart het token in de sleutelhanger</td></tr>
 </table>
+
+<h2>Synchronisatie via iCloud</h2>
+<p>Gebruik je iCloud, dan houdt Veyra je apparaten met hetzelfde Apple-account gelijk, zonder server van de ontwikkelaar:</p>
+<ul>
+  <li>Instellingen, Home-indeling, planken en voorkeuren gaan via de iCloud-sleutelwaardeopslag van je eigen Apple-account.</li>
+  <li>Mediaservers, IPTV-providers en API-sleutels gaan via de iCloud-sleutelhanger van Apple (end-to-end versleuteld). Daarvoor moet de iCloud-sleutelhanger aan staan.</li>
+  <li>Verwijder je iets op het ene apparaat, dan verdwijnt het ook op je andere apparaten. Zet je iCloud uit, dan blijft alles lokaal.</li>
+  <li>De ontwikkelaar kan deze gegevens niet inzien. Apple verwerkt ze volgens het eigen privacybeleid van Apple.</li>
+</ul>
 
 <h2>Je eigen servers</h2>
 <p>Mediaservers, WebDAV-mappen en IPTV-providers zijn adressen die <strong>jij</strong> instelt. Veyra stuurt je aanmeldgegevens en afspeelverzoeken alleen naar die server. Wat die server daarmee doet, bepaalt de beheerder van die server.</p>
@@ -96,7 +106,7 @@ Contact: <a href="mailto:stijn.bensch@me.com">stijn.bensch@me.com</a></p>
 
 <hr>
 <h2 id="en">English summary</h2>
-<p>Veyra has no servers or accounts of its own, no ads, no tracking and no analytics or crash reporting. Settings and credentials stay on your device (credentials in the Keychain). Veyra only contacts services needed for features you use (TMDB for metadata and images; Trakt, OpenSubtitles, TVmaze, IntroDB/SkipDB, OMDb, fanart.tv, MDBList, ESPN and TheSportsDB only when you use or configure them) and the servers you set up yourself (Jellyfin, Emby, Plex, WebDAV, IPTV). Veyra provides no content itself. The developer receives no personal data. Contact: <a href="mailto:stijn.bensch@me.com">stijn.bensch@me.com</a>.</p>
+<p>Veyra has no servers or accounts of its own, no ads, no tracking and no analytics or crash reporting. Settings and credentials stay under your control: on your own devices and, if you use iCloud, synced between your devices through your own Apple account (settings via iCloud key-value storage; server credentials and keys via iCloud Keychain, end-to-end encrypted). The developer has no access to them. Your Trakt connection stays on the device where you connected it. Veyra only contacts services needed for features you use (TMDB for metadata and images; Trakt, OpenSubtitles, TVmaze, IntroDB/SkipDB, OMDb, fanart.tv, MDBList, ESPN and TheSportsDB only when you use or configure them) and the servers you set up yourself (Jellyfin, Emby, Plex, WebDAV, IPTV). Veyra provides no content itself. The developer receives no personal data. Contact: <a href="mailto:stijn.bensch@me.com">stijn.bensch@me.com</a>.</p>
 
 </main>
 </body>
