@@ -24,7 +24,7 @@
 <main>
 
 <h1>Veyra – Privacybeleid</h1>
-<p class="muted">Laatst bijgewerkt: 9 oktober 2026. Geldt voor Veyra op iPhone, iPad, Apple TV (tvOS) en Mac.</p>
+<p class="muted">Laatst bijgewerkt: 10 oktober 2026. Geldt voor Veyra op iPhone, iPad, Apple TV (tvOS) en Mac.</p>
 
 <h2>In het kort</h2>
 <ul>
@@ -45,6 +45,8 @@ Contact: <a href="mailto:stijn.bensch@me.com">stijn.bensch@me.com</a></p>
   <li>Kijkvoortgang en bekeken-status op dit apparaat, en tijdelijk opgeslagen afbeeldingen en gegevens (cache).</li>
   <li>Aanmeldgegevens en toegangssleutels voor IPTV, mediaservers (Jellyfin, Emby, Plex, WebDAV), Trakt en eventuele eigen API-sleutels: in de sleutelhanger van je apparaat. De Trakt-koppeling blijft op het apparaat waar je hem hebt gekoppeld.</li>
   <li>Herinneringen en meldingen (bijvoorbeeld een aflevering, wedstrijd of beschikbaarheid) worden <strong>lokaal</strong> op je apparaat gepland. Er is geen pushserver van de ontwikkelaar.</li>
+  <li>Kijkgeheugen: Veyra onthoudt welke series, films en programma's (ook van live tv) je echt keek, met titel, aantal keren, minuten en datum, zodat Veyra Now kan laten zien wat er nieuws van komt en betere aanbevelingen kan doen. Er staan geen adressen, accounts of afbeeldingen in. Je kunt het uitzetten of wissen in Veyra Now &gt; Kijkgeheugen.</li>
+  <li>Gevolgde programma's: een programma dat je in de gids zelf volgt, wordt in hetzelfde kijkgeheugen bewaard. Veyra zoekt dan in de programmagids op je apparaat wanneer het begint en meldt dat lokaal.</li>
   <li>Siri en Opdrachten ('Wat kan ik nu kijken?'): Veyra bewaart op je apparaat een korte samenvatting van wat Veyra Now toont (titels en tijden, geen accountgegevens) en leest alleen die voor. Die samenvatting verlaat je apparaat niet.</li>
   <li>Op Apple TV bewaart Veyra een korte momentopname voor het Top Shelf-beeld op het beginscherm, lokaal in de gedeelde sleutelhanger.</li>
 </ul>
@@ -53,7 +55,7 @@ Contact: <a href="mailto:stijn.bensch@me.com">stijn.bensch@me.com</a></p>
 <p>Bij elk verzoek ziet de ontvanger technisch je IP-adres. Op de gegevens bij deze diensten is het eigen privacybeleid van die dienst van toepassing.</p>
 <table>
   <tr><th>Dienst</th><th>Waarvoor</th><th>Wat wordt verstuurd</th></tr>
-  <tr><td>TMDB (themoviedb.org)</td><td>Film- en seriegegevens, afbeeldingen, streamingaanbieders</td><td>Zoektermen, titel- en TMDB-id's, regio</td></tr>
+  <tr><td>TMDB (themoviedb.org)</td><td>Film- en seriegegevens, afbeeldingen, streamingaanbieders; ook om te zien of een serie die je volgt een nieuw seizoen of een nieuwe aflevering krijgt, en voor aanbevelingen op je smaak</td><td>Zoektermen, titels en titel- en TMDB-id's van series en films die je zoekt, volgt of vaker keek, regio. Geen account en geen apparaat-id</td></tr>
   <tr><td>Trakt (trakt.tv) – vrijwillig</td><td>Verder kijken, kalender, lijsten, bekeken-status</td><td>Na koppelen: je profiel, geschiedenis, lijsten en beoordelingen worden gelezen. De afgespeelde titel en het bekeken percentage gaan alleen naar Trakt als je dat in de app zelf inschakelt.</td></tr>
   <tr><td>OpenSubtitles</td><td>Ondertitels zoeken</td><td>IMDb-id en bij series seizoen en aflevering, plus taal</td></tr>
   <tr><td>OMDb, fanart.tv, MDBList</td><td>Beoordelingen, banners en logo's</td><td>IMDb- of TMDB-id; alleen als er een sleutel is ingesteld</td></tr>
@@ -69,7 +71,7 @@ Contact: <a href="mailto:stijn.bensch@me.com">stijn.bensch@me.com</a></p>
 <h2>Synchronisatie via iCloud</h2>
 <p>Gebruik je iCloud, dan houdt Veyra je apparaten met hetzelfde Apple-account gelijk, zonder server van de ontwikkelaar:</p>
 <ul>
-  <li>Instellingen, Home-indeling, planken en voorkeuren gaan via de iCloud-sleutelwaardeopslag van je eigen Apple-account. Dat geldt ook voor wat Veyra Now op je apparaten leert (kijkgewoonten per dagdeel, meer/minder-keuzes, weggetikte titels) en voor je rij.</li>
+  <li>Instellingen, Home-indeling, planken en voorkeuren gaan via de iCloud-sleutelwaardeopslag van je eigen Apple-account. Dat geldt ook voor wat Veyra Now op je apparaten leert (kijkgewoonten per dagdeel, meer/minder-keuzes, weggetikte titels), je kijkgeheugen en gevolgde programma's, en voor je rij. "Kijkgeheugen wissen" wist het op al je apparaten.</li>
   <li>Mediaservers, IPTV-providers en API-sleutels gaan via de iCloud-sleutelhanger van Apple (end-to-end versleuteld). Daarvoor moet de iCloud-sleutelhanger aan staan.</li>
   <li>Verwijder je iets op het ene apparaat, dan verdwijnt het ook op je andere apparaten. Zet je iCloud uit, dan blijft alles lokaal.</li>
   <li>De ontwikkelaar kan deze gegevens niet inzien. Apple verwerkt ze volgens het eigen privacybeleid van Apple.</li>
@@ -107,7 +109,7 @@ Contact: <a href="mailto:stijn.bensch@me.com">stijn.bensch@me.com</a></p>
 
 <hr>
 <h2 id="en">English summary</h2>
-<p>Veyra has no servers or accounts of its own, no ads, no tracking and no analytics or crash reporting. Settings and credentials stay under your control: on your own devices and, if you use iCloud, synced between your devices through your own Apple account (settings via iCloud key-value storage; server credentials and keys via iCloud Keychain, end-to-end encrypted). The developer has no access to them. Your Trakt connection stays on the device where you connected it. What Veyra Now learns from how you use it (viewing habits by time of day, more/less choices, dismissed titles) and your queue sync only through your own iCloud; reminders are local notifications on the device, and the Siri/Shortcuts summary stays on the device. Veyra only contacts services needed for features you use (TMDB for metadata and images; Trakt, OpenSubtitles, TVmaze, IntroDB/SkipDB, OMDb, fanart.tv, MDBList, ESPN and TheSportsDB only when you use or configure them) and the servers you set up yourself (Jellyfin, Emby, Plex, WebDAV, IPTV). Veyra provides no content itself. The developer receives no personal data. Contact: <a href="mailto:stijn.bensch@me.com">stijn.bensch@me.com</a>.</p>
+<p>Veyra has no servers or accounts of its own, no ads, no tracking and no analytics or crash reporting. Settings and credentials stay under your control: on your own devices and, if you use iCloud, synced between your devices through your own Apple account (settings via iCloud key-value storage; server credentials and keys via iCloud Keychain, end-to-end encrypted). The developer has no access to them. Your Trakt connection stays on the device where you connected it. What Veyra Now learns from how you use it (viewing habits by time of day, more/less choices, dismissed titles), your watch memory (titles, counts and dates of what you actually watched, including live TV, which you can switch off or clear) and the programmes you follow, and your queue sync only through your own iCloud; reminders are local notifications on the device, and the Siri/Shortcuts summary stays on the device. Veyra only contacts services needed for features you use (TMDB for metadata, images and to check for new seasons and recommendations, which sends titles and TMDB IDs but no account or device identifier; Trakt, OpenSubtitles, TVmaze, IntroDB/SkipDB, OMDb, fanart.tv, MDBList, ESPN and TheSportsDB only when you use or configure them) and the servers you set up yourself (Jellyfin, Emby, Plex, WebDAV, IPTV). Veyra provides no content itself. The developer receives no personal data. Contact: <a href="mailto:stijn.bensch@me.com">stijn.bensch@me.com</a>.</p>
 
 </main>
 </body>
